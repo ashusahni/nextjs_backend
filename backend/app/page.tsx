@@ -1,4 +1,5 @@
 import axios from "axios";
+import { Jockey_One } from "next/font/google";
 
 const getUserData = async () => {
   await new Promise((r)=>{setTimeout(r,500)})
@@ -23,3 +24,4 @@ export default async function home(params: any) {
     </div>
   );
 }
+

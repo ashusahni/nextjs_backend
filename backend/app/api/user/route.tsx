@@ -1,8 +1,12 @@
+import { NextRequest } from "next/server";
 
 
-export function GET () {
+export async function POST (req: NextRequest) {
+
+    const body = await req.json();
+    console.log(body)
+
     return Response.json({
-        email: "ashutosh833@gmail.com",
-        name:"ashutosh"
+        msg:"you are successfully loged in"
     })
 }
