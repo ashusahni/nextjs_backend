@@ -9,6 +9,9 @@ const getUserData = async () => {
   return response.data;
 };
 
+
+
+
 export default async function home(params: any) {
   const userDetails = await getUserData();
   return (
